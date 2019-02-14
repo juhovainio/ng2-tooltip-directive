@@ -220,7 +220,7 @@ export class TooltipDirective {
 
     this.hideAfterClickTimeoutId = window.setTimeout(() => {
       this.destroyTooltip();
-    }, 0)
+    }, this.options['hide-delay'])
   }
 
   ngOnInit():void {
